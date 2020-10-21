@@ -2,3 +2,11 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+.idea
+# Gems
+*.gem
+.bundle/
+vendor/
+Gemfile.lock
+.DS_Store
+.sass-cache

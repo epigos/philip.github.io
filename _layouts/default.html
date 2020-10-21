@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+
+  {% if site.google-analytics %}
+    {% include google-analytics.html %}
+  {% endif %}
+
+  {% include header.html %}
+
+  <!-- begin content -->
+  <main class="content" aria-label="Content">
+    {{ content }}
+  </main>
+  <!-- end content -->
+
+  {% include footer.html %}
+
+  <!-- begin js -->
+  <script src="{{ '/assets/js/vendors/jquery-3.3.1.min.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+  <script src="{{ '/assets/js/vendors/aos.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+  <script src="{{ '/assets/js/vendors/jquery.fitvids.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+  <script src="{{ '/assets/js/common.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+  <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+  <!-- end js -->
+</body>
+
+</html>

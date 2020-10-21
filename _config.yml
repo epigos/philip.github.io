@@ -1,3 +1,70 @@
-theme: jekyll-theme-minimal
-title: Philip Adzanoukpe | Portfolio
+title: Philip Adzanoukpe – Software and Artificial Intelligence Engineer
+tagline: Personal website
+logo:  # you can add own logo.
 description: I am a Software and Machine Learning Engineer with over six years of commercial experience in Python and Golang developing stable and high-performance Backend and AI systems. I am currently a graduate student in Data science with keen interests in practical applications of Machine learning, Deep Learning, Reinforcement Learning and Computer vision to derive value for consumers and business stakeholders.
+baseurl: "/"
+url: "philip.link"
+
+# Author Settings
+author:
+  name: Philip Adzanoukpe
+  image: '/assets/img/philip.jpg'
+  job: Software and Artificial Intelligence Engineer
+  bio: I am a Software and Machine Learning Engineer with over six years of commercial experience in Python and Golang developing stable and high-performance Backend and AI systems. I am currently a graduate student in Data science with keen interests in practical applications of Machine learning, Deep Learning, Reinforcement Learning and Computer vision to derive value for consumers and business stakeholders.
+  email: epiigos@gmail.com
+  twiter: epigos
+
+
+twitter:
+  username: epigos
+  card: summary
+
+# Contact links
+contact:
+  - name: Twitter
+    link: https://twitter.com/epigos
+  - name: Linkedin
+    link: https://www.linkedin.com/in/philipadzanoukpe
+  - name: Github
+    link: https://github.com/epigos
+
+# Comment Section (Disqus)
+disqus-identifier:
+# Google Analytics
+google-analytics: # add your identifier. For example UA-99631805-1.
+
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-sitemap
+  - jekyll/tagging
+  - jekyll-seo-tag
+  - jekyll-feed
+
+# Pages Path
+defaults:
+  - scope:
+      path: '_pages'
+    values:
+      permalink: /:basename:output_ext
+
+include:
+  - _pages
+
+# Tags
+tag_page_dir:         tag
+tag_page_layout:      tag-page
+tag_permalink_style:  pretty
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
